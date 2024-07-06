@@ -1,0 +1,478 @@
+*
+{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arvo", serif;
+}
+
+:root
+{
+    --first-font: "Montserrat", sans-serif;
+    --second-font:"Arvo", serif;
+    --head-color: #9FA3A7;
+    --second-color:#333333
+}
+
+/* ---------------------- */
+.container
+{
+    display: grid;
+    grid-template-areas:
+    "iphone iphone iphone iphone iphone iphone text text text text text text"
+    "keyboard keyboard keyboard mac mac mac mac mac mac floppy floppy floppy"
+    "keyboard keyboard keyboard mac mac mac mac mac mac floppy floppy floppy"
+    "controller controller controller ipad ipad ipad ipad ipad ipad floppy floppy floppy"
+    "controller controller controller ipad ipad ipad ipad ipad ipad floppy floppy floppy"
+}
+
+
+/* --------- iphone -------- */
+.iphone
+{
+    grid-area: iphone;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;   
+}
+
+.iphone-image img
+{
+    width: 100%;
+}
+
+.iphone .iphone-image
+{
+    flex-basis: 35%;
+    margin-top: 40px;
+}
+
+.iphone-content
+{
+    flex-basis: 30%;
+}
+
+.iphone-content h2
+{
+    color: var(--head-color);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--first-font);
+}
+
+.iphone-content p
+{
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    color: var(--second-color);
+    line-height: 35px
+}
+
+.iphone-content span
+{
+    color: var(--head-color);
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--first-font);
+    line-height: 25px
+}
+/* --------- iphone end ----------*/
+
+/* -------- text ---------*/
+.text 
+{
+    grid-area: text;
+    background: #F7F8F9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text h1
+{
+    color:  var(--second-color);
+    font-weight: 400;
+    font-size: 48px;
+   
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.text p
+{
+    font-family: var(--first-font);
+    color: var(--head-color);
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.text a
+{
+    color: #27B9C2;
+    font-family: var(--first-font);
+    font-size: 14px;
+    font-weight: 400;
+}
+/* ------------ text --------- */
+
+/* ------ keyboard ------- */
+.keyboard
+{
+    grid-area: keyboard;
+    text-align: center;
+    background-color: #F05638;
+}
+
+.keyboard-image img
+{
+    width: 100%;
+}
+
+.keyboard-image
+{
+    margin-top: 50px;
+}
+
+.keyboard-content
+{
+    margin-bottom: 50px;
+}
+
+.keyboard-content p
+{
+    color: #FFFBFB;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;   
+    margin-bottom: 20px; 
+}
+
+.keyboard-content a
+{
+    color: #FFC80A;
+    font-family: var(--first-font);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+/* ------- keyboard end ---------- */
+
+/* ------- mac -------- */
+.mac
+{
+    grid-area: mac;
+    padding: 70px 30px 0 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mac-image{
+  width: 100%;
+}
+.mac-image  img
+{
+   width: 90%
+}
+
+.mac-content1 h3
+{
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: var(--head-color);
+    font-family: var(--first-font);
+    letter-spacing: 2px;
+}
+
+
+
+.mac-content1
+{
+    width: 35%;
+
+}
+ .mac-content2
+ {
+   width:  40%;
+ }
+.mac-content1 p
+{
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: var(--second-font);
+    color: var(--second-color);
+}
+
+.mac-content2 p
+{
+    color: var(--head-color);
+    font-family:var(--first-font) ;
+    font-size: 13px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.mac-content2 a
+{
+   
+    color: #27B9C2;
+    font-size: 12px;
+    font-family: var(--first-font);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ----------------------------------- */
+
+/* floppy */
+
+.floppy
+{
+    grid-area: floppy;
+    background-color: #8F76BC;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+.floppy-image img
+{
+    width: 100%;
+}
+
+.floppy-image
+{
+    width: 60%;
+    margin: auto;
+}
+
+.floppy-head
+{
+   
+    background-color: rgba(0, 0, 0, 0.103);
+    border-radius: 100%;
+    padding: 50px  ;
+   
+}
+
+.floppy-head .floppy-image span
+{
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: var(--first-font);
+}
+
+.pop 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 30px;
+    font-family: var(--first-font);
+}
+
+.pop img
+{
+   width:  12px;
+}
+
+.pop span
+{
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.floppy-footer
+{
+    padding: 50px 60px;
+}
+
+.floppy-footer h3
+{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.floppy-footer p
+{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.floppy-footer a
+{
+    color: black;
+    background-color: #FFC80A;
+    padding: 18px;
+    letter-spacing: 2px;
+    font-family: var(--first-font);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 40px;
+}
+
+/* ----------- */
+.controller
+{
+    grid-area: controller;
+    background-color: #F7F8F9;
+    text-align: center;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:30px ;
+}
+
+.controller-image img
+{
+    width: 100%;
+}
+
+.controller-image
+{
+    padding: 20px 60px 10px 0;
+    width: 80%;
+   
+    margin: auto;
+}
+
+
+.controller-content
+{
+    padding: 20px 0; 
+}
+
+.controller-content h3
+{
+    font-weight: 300;
+    font-family: var(--second-font);
+    font-size: 20px;
+    color: var(--second-color);
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.controller-content a
+{
+    color: #27B9C2;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-family: var(--first-font);
+    font-size: 12px;
+}
+/* --------------- */
+
+/* ipad */
+.ipad
+{
+    grid-area: ipad;
+
+}
+
+.ipad-image img
+{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media----------------- */
+@media(max-width:476px)
+{
+   body .container
+    {
+        display: grid;
+        grid-template-areas:
+        "text" 
+        "iphone" 
+        "keyboard" 
+        "controller"
+        "text2"
+        "floppy"
+        "mac"
+        "ipad" ;
+    }
+
+
+/* ------------------ */
+    .container .iphone{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .iphone-content
+    {
+        width: 80%;
+    }
+
+    .iphone-image
+    {
+      width: 60%
+    }
+/* ------------ */
+.mac
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.mac .mac-content1{
+    width: 100%;
+}
+.mac .mac-content1 .mac-image
+{
+    margin-bottom: 30px;
+    text-align: center;
+    width: 80%;
+}
+.mac .mac-content2
+{
+    width: 100%;
+    margin-bottom: 50px;
+}
+}
+/* -------------------- */
+@media(max-width:992px)
+{
+    .container
+    {
+        display: grid;
+        grid-template-areas: 
+        "text text text text"
+        "iphone iphone iphone iphone"
+         "keyboard keyboard controller controller"
+         ". . floppy floppy"
+         ;
+    }
+}
